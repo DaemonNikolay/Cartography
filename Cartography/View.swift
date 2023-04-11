@@ -10,7 +10,7 @@ import Foundation
 
 #if os(iOS) || os(tvOS)
     import UIKit
-    public typealias View = UIView
+    public typealias CartographyView = UIView
 
     extension UIView: LayoutItem {
         public func asProxy(context: Context) -> ViewProxy {
@@ -19,7 +19,7 @@ import Foundation
     }
 #else
     import AppKit
-    public typealias View = NSView
+    public typealias CartographyView = NSView
 
     extension NSView: LayoutItem {
         public func asProxy(context: Context) -> ViewProxy {

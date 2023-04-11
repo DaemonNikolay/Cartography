@@ -9,7 +9,7 @@
 public final class ViewProxy: SupportsPositioningLayoutProxy, SupportsBaselineLayoutProxy, AutoresizingMaskLayoutProxy {
     public var context: Context
 
-    private let view: View
+    private let view: CartographyView
     public var item: AnyObject {
         return self.view
     }
@@ -23,7 +23,7 @@ public final class ViewProxy: SupportsPositioningLayoutProxy, SupportsBaselineLa
         }
     }
 
-    public init(context: Context, view: View) {
+    public init(context: Context, view: CartographyView) {
         self.context = context
         self.view = view
     }

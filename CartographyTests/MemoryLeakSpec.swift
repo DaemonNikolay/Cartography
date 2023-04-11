@@ -7,9 +7,9 @@ class MemoryLeakSpec: QuickSpec {
     override func spec() {
         describe("constrain") {
             it("should not leak memory") {
-                weak var weak_superview: View? = .none
-                weak var weak_viewA: View? = .none
-                weak var weak_viewB: View? = .none
+                weak var weak_superview: CartographyView? = .none
+                weak var weak_viewA: CartographyView? = .none
+                weak var weak_viewB: CartographyView? = .none
 
                 autoreleasepool {
                     let superview = View(frame: CGRect(x: 0, y: 0, width: 400, height: 400))

@@ -15,7 +15,7 @@ import Nimble
 @available(OSX, introduced: 10.11)
 final class LayoutGuideSpec: QuickSpec {
     override func spec() {
-        var view: View!
+        var view: CartographyView!
         var layoutGuide: LayoutGuide!
 
         beforeEach {

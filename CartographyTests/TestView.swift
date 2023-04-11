@@ -8,7 +8,7 @@
 
 import Cartography
 
-class TestView: View {
+class TestView: CartographyView {
     override init(frame: CGRect) {
         super.init(frame: frame)
 

@@ -20,7 +20,7 @@ public class Context {
     internal var constraints: [Constraint] = []
     
     internal func addConstraint(_ from: Property, to: Property? = nil, coefficients: Coefficients = Coefficients(), relation: LayoutRelation = .equal) -> NSLayoutConstraint {
-        if let fromItem = from.item as? View {
+        if let fromItem = from.item as? CartographyView {
             fromItem.translatesAutoresizingMaskIntoConstraints = false
         }
 
